@@ -1,0 +1,10 @@
+<% @posts.each do |post| %>
+  <!--
+  <ul>
+    <a href="/posts/<%= post.id %>">
+      <li><%= post.title %></li>
+    </a>
+  </ul>
+  -->
+  <%= link_to post.title, post_path(post) %>
+<% end %>
